@@ -129,14 +129,10 @@ def findElement(oLocator):
 def openBrowser(url) :
 ##        setUp()
     sIniFilePath = frameworkPath + "/config.ini"
-    print "Under open Browser"
     
-    print getValueFromINIFile_Dr(sIniFilePath , "Environment", "browser")
     browserName = getValueFromINIFile_Dr(sIniFilePath , "Environment", "browser")
     global driver
-    print browserName
     seleniumDrivers = frameworkPath + "/Selenium_Drivers"
-    print "Selenium Driver path:- " + str(seleniumDrivers)
     if (browserName.lower() == "google chrome" or browserName.lower() == "gc" or browserName.lower() == "chrome"):
        # chromedriver = frameworkPath + "/Selenium_Drivers"
         #print chromedriver
@@ -147,20 +143,15 @@ def openBrowser(url) :
         driver = webdriver.Firefox()
     else:
         driver = webdriver.Firefox()
-    # setDriver(driver)    
-    # driver.implicitly_wait(60) 
+    
     driver.get(url)
-    print "Url opened"
     driver.maximize_window()
-    print "window maximize"
     driver.execute_script("window.focus();")
-    print "focus on window"
     eResult = "Open URL:- '" + url + "'."
     aResult = "Open URL sucessfully"
-    print "open browser before tcReport"
     log.info("Url :- " +  url + " . open successfully")
     tcReport("openBrowser", eResult, aResult, "Pass")
-##        print a
+
 
 ##########################################################################################
 def inputText(oLocator, value):
@@ -469,8 +460,6 @@ def takeScreenShot():
 #########################################################################################
 def tcReport(stepName, expectedResult, ActualResult, status):
     StatusDetbgcolor=""
-    # sIniFilePath = frameworkPath + "/config.ini"
-    # print "Driver wala ini path" + Driver.sIniFilePath
     sHeaderName = "Environment"
     sEnvName = getValueFromINIFile_Dr(sIniFilePath , sHeaderName, "Environment")
     sReleaseName = getValueFromINIFile_Dr(sIniFilePath , sHeaderName, "Release")
@@ -487,9 +476,6 @@ def tcReport(stepName, expectedResult, ActualResult, status):
         StatusDetbgcolor = '"#F9966B"'
     elif status.lower() == "done":
         StatusDetbgcolor = '"#BCE954"'
-##    sTCFileName = sTestCaseName + "_" + str(current_time) + ".html"
-##    setValueIntoINIFile_GL(sIniFilePath , "Other", "TestCase_FileName", sTCFileName)
-##    sReportPath = frameworkPath + "/Reports/TestCaseReport/" + sTCFileName
     sReportPath = getValueFromINIFile_Dr(sIniFilePath , "Other", "TestCase_Path")
     print sReportPath
     if not(os.path.isfile(sReportPath)):
@@ -531,10 +517,6 @@ def tcReport(stepName, expectedResult, ActualResult, status):
     sFile.write('<td width=300 align="left"><FONT COLOR="#153E7E" FACE="Arial" SIZE=1><b>' + ActualResult.encode('ascii', 'ignore') + '</b></td>')
     sFile.write('<td width=200 align="left"><FONT COLOR="#153E7E" FACE="Arial" SIZE=1><b><a href=' + str(sScreenShotPath) + '>' + screenShotName + '</b></td></tr> ')
     print "cde"    
-##fetchSQLData()
-##    setUp()
-##print getValueFromINIFile_Dr('Config.ini','DataBase', 'host')
-
 
 
        

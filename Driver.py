@@ -118,14 +118,10 @@ def testSuiteReportAddTestCaseReport(intCounter):
     print "testSuiteReportAddTestCaseReport Report Path:- " + sReportPath
     StatusDetbgcolor=""
     sFile = open(sReportPath, "a")
-    print "Start Printing"
     # sIniPath = frameworkPath + "/config.ini"
     sTestCaseName = GenericLib.getValueFromINIFile_Dr(sIniPath , "Other", "Test Case Name")
-    print "Test Case Name:- " + sTestCaseName
     sTC_Status = GenericLib.getValueFromINIFile_Dr(sIniPath , "Other", "TestCase Status")
-    print "Test Case status:- " + sTC_Status
     sTC_FileName = GenericLib.getValueFromINIFile_Dr(sIniPath , "Other", "TestCase_FileName")
-    print "Test file Name:- " + sTC_FileName
     if sTC_Status.lower() == "pass":
         StatusDetbgcolor='"#BCE954"'
     elif sTC_Status.lower() == "fail":

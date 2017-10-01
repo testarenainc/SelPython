@@ -1,0 +1,85 @@
+DEBUG:This message should appear on the console
+INFO:So should this
+WARNING:And this, too
+DEBUG:POST http://127.0.0.1:55614/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox"}}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/url {"url": "http://gmail.com", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/window/maximize {"windowHandle": "current", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/execute/sync {"sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "args": [], "script": "window.focus();"}
+DEBUG:Finished Request
+INFO:Url :- http://gmail.com . open successfully
+DEBUG:GET http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/screenshot {"sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element {"using": "xpath", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+INFO://input[@type='email'] : Element Found
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element/342965c5-0a0f-2b4d-8387-450587d9a878/value {"text": "abc", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "id": "342965c5-0a0f-2b4d-8387-450587d9a878", "value": ["a", "b", "c"]}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element {"using": "xpath", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+INFO://input[@type='email'] : Element Found
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element/342965c5-0a0f-2b4d-8387-450587d9a878/value {"text": "abc", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "id": "342965c5-0a0f-2b4d-8387-450587d9a878", "value": ["a", "b", "c"]}
+DEBUG:Finished Request
+INFO:Pass
+DEBUG:GET http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/screenshot {"sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element {"using": "xpath", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/element/342965c5-0a0f-2b4d-8387-450587d9a878/value {"text": "def", "sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90", "id": "342965c5-0a0f-2b4d-8387-450587d9a878", "value": ["d", "e", "f"]}
+DEBUG:Finished Request
+INFO:........Logs under Gmail test ...........
+DEBUG:DELETE http://127.0.0.1:55614/session/d12e0f70-852d-5c4c-8910-40a5f59dcd90/window {"sessionId": "d12e0f70-852d-5c4c-8910-40a5f59dcd90"}
+DEBUG:Finished Request
+INFO:Browser Close
+DEBUG:POST http://127.0.0.1:55720/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox"}}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/url {"url": "http://gmail.com", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/window/maximize {"windowHandle": "current", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/execute/sync {"sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "args": [], "script": "window.focus();"}
+DEBUG:Finished Request
+INFO:Url :- http://gmail.com . open successfully
+DEBUG:GET http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/screenshot {"sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element {"using": "xpath", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+INFO://input[@type='email'] : Element Found
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element/e4b09d58-ab4d-3c4c-82d9-921aa920627d/value {"text": "abc", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "id": "e4b09d58-ab4d-3c4c-82d9-921aa920627d", "value": ["a", "b", "c"]}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element {"using": "xpath", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+INFO://input[@type='email'] : Element Found
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element/e4b09d58-ab4d-3c4c-82d9-921aa920627d/value {"text": "abc", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "id": "e4b09d58-ab4d-3c4c-82d9-921aa920627d", "value": ["a", "b", "c"]}
+DEBUG:Finished Request
+INFO:Pass
+DEBUG:GET http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/screenshot {"sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element {"using": "xpath", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "value": "//input[@type='email']"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/element/e4b09d58-ab4d-3c4c-82d9-921aa920627d/value {"text": "def", "sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49", "id": "e4b09d58-ab4d-3c4c-82d9-921aa920627d", "value": ["d", "e", "f"]}
+DEBUG:Finished Request
+INFO:........Logs under Gmail test ...........
+DEBUG:DELETE http://127.0.0.1:55720/session/8bd0ba09-92e5-2643-954e-d1412d9caf49/window {"sessionId": "8bd0ba09-92e5-2643-954e-d1412d9caf49"}
+DEBUG:Finished Request
+INFO:Browser Close
+DEBUG:POST http://127.0.0.1:55817/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox"}}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e/url {"url": "https://twitter.com/?lang=en", "sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e/window/maximize {"windowHandle": "current", "sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e"}
+DEBUG:Finished Request
+DEBUG:POST http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e/execute/sync {"sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e", "args": [], "script": "window.focus();"}
+DEBUG:Finished Request
+INFO:Url :- https://twitter.com/?lang=en . open successfully
+DEBUG:GET http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e/screenshot {"sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e"}
+DEBUG:Finished Request
+DEBUG:DELETE http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e/window {"sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e"}
+DEBUG:Finished Request
+INFO:Browser Close
+DEBUG:DELETE http://127.0.0.1:55817/session/7fb865b8-23f8-9045-8ab2-87e9f7e26d6e {"sessionId": "7fb865b8-23f8-9045-8ab2-87e9f7e26d6e"}
+DEBUG:Finished Request
+INFO:Unexpected error : Message: Tried to run command without establishing a connection
+
